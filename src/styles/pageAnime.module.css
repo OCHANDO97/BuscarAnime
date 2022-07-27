@@ -1,0 +1,125 @@
+
+.container_section {
+    display: grid;
+    grid-template-areas: "button button"
+                         "title title"
+                         "aside aside"
+                         "genero genero" 
+                         "imagen resumen"
+                         "score score" 
+                         "descripcion descripcion" ;
+    grid-template-columns: repeat(2, 50%);
+    max-width: 1000px;
+    width: 90%;
+    margin: 20px auto;
+    background-color: #ccc;
+}
+
+.container_section_btn {
+    grid-area:button
+    
+}
+
+.container_section_title {
+    grid-area: title;
+    margin-top: 100px;
+    display:flex;
+    justify-content:center;
+    font-size: 2.5rem;
+}
+
+.container_section_aside {
+    grid-area: aside;
+    display: flex;
+    flex-direction: colums;
+    font-size: 1.25rem;
+    margin-left: 20px;
+
+}
+
+.container_section_genero {
+    grid-area:genero;
+    display: flex;
+    flex-direction: colums;
+    font-size: 1.25rem;
+    justify-content: space-between;
+    width: 350px;
+    margin-left: 20px;
+
+}
+
+.container_section_img {
+    grid-area: imagen;
+    width:450px;
+    height:450px;
+}
+
+.container_sectio_resumen {
+    grid-area:resumen;
+    width: 450px;
+    font-size: 1.25rem;
+
+}
+.container_sectio_score_img {
+    position: relative;
+    top: 7px;
+    left: -10px;
+}
+
+.container_sectio_score {
+    grid-area:score;
+    font-size:1.25rem;
+    display: flex;
+    justify-content:center;
+    width: 300px;
+}
+
+.container_sectio_score:hover > .figcaption {
+    display:block;
+    transition: all .5s;
+    margin-left: 2px;
+  }
+
+.figcaption {
+    display:none; 
+    transition: all .5s;
+  }
+
+.container_personajesAPI {
+    grid-area:descripcion;
+    display: flex;
+    justify-content: center;
+    font-size: 1.875rem;
+    text-decoration: none;
+    color: black;
+
+
+}
+
+  @media screen and (max-width: 500px) {
+    .container_section { 
+         grid-template-areas: 
+                         "title title"
+                         "aside aside"
+                         "genero genero" 
+                         "imagen imagen"
+                         "resumen resumen"
+                         "score score"
+                         "descripcion descripcion"  ;
+    background-color: #ccc;
+    margin-top:100px;
+
+    }
+
+    
+    .container_section_img {
+        width:350px;
+        height:400px;
+    }
+
+
+    .container_sectio_resumen {
+        width:350px;
+    }
+   
+  }

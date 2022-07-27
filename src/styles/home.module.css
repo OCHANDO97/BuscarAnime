@@ -1,0 +1,115 @@
+.gridContainer {
+    width: 90%;
+    display: grid;
+    grid-template-areas: "cardSearch cardSearch sectionPopular "
+                          "sectionSeries sectionSeries sectionPopular ";
+    grid-template-rows: 200px  ;
+    grid-template-columns: repeat(3, 33.33%);
+    margin: 20px auto;
+
+}
+
+.cardSearch {
+    grid-area:cardSearch;
+    width: 100%;
+    margin-top:3rem ;
+}
+
+.cardSearch_form {
+    display: flex;
+    justify-content: center;
+}
+
+.cardSearch_input {
+    height: 45px;
+    width: 300px;
+    border-radius: 10px;
+    background-color: #ccc;
+}
+
+.cardSearch_btn {
+    border: none;
+    height: 0px;
+    width: 0px;
+    background-color:#ccc;
+    cursor: pointer;
+    position: relative;
+    right: 40px;
+    top: 10px;
+}
+
+.sectionPopular {
+    grid-area: sectionPopular;
+    width: 100%;
+}
+
+.sectionPopular_title {
+    display: flex;
+    justify-content: center;
+}
+
+.sectionPopular_main {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;  
+    background-color: #ccc;
+    
+}
+
+.sectionPopular_main_enlaces {
+    text-decoration: none;
+    color: black;
+}
+
+
+.sectionPopular_main_txt {
+    width: 100px;
+}
+.animesSearch {
+    grid-area: sectionSeries;
+    width: 90%;
+}
+
+.animesSearch_main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
+}
+
+.animesSearch_main_txt {
+    width: 250px;
+}
+
+@media screen and (max-width: 500px) {
+    
+    .gridContainer {
+        width: 100%;
+        display: grid;
+        grid-template-areas: "cardSearch cardSearch"
+                              "sectionSeries sectionSeries "
+                              "sectionPopular sectionPopular";
+        grid-template-rows: 55px  ;
+        grid-template-columns: repeat(2, 50%);
+    }
+    
+    .cardSearch_form {
+        margin-top:-45px;
+    }
+
+    .sectionPopular {
+        margin-top: 200px;
+    }
+
+    .animesSearch_main {
+        margin-top: 50px;
+        justify-content:center;
+        row-gap: 50px;
+    }
+    
+}
+
+
