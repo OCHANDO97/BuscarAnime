@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/BuscarAnime/static/css/main.6e95f58a.css",
+    "main.js": "/BuscarAnime/static/js/main.e62267d0.js",
+    "static/media/estrellaEscore.png": "/BuscarAnime/static/media/estrellaEscore.6c34230c4f6db6db0e41.png",
+    "static/media/search.png": "/BuscarAnime/static/media/search.532b5c98ace0732e9153.png",
+    "index.html": "/BuscarAnime/index.html",
+    "main.6e95f58a.css.map": "/BuscarAnime/static/css/main.6e95f58a.css.map",
+    "main.e62267d0.js.map": "/BuscarAnime/static/js/main.e62267d0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6e95f58a.css",
+    "static/js/main.e62267d0.js"
+  ]
+}
